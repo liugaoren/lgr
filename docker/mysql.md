@@ -1,3 +1,5 @@
+### MYSQL部署
+
 #### 1. 搜索mysql镜像
 
 ```
@@ -46,3 +48,50 @@ mysql:5.6
 docker exec –it c_mysql /bin/bash
 ```
 
+
+
+### mongo部署
+
+```
+docker pull mongo:latest
+```
+
+```
+docker images
+```
+
+```
+docker run -itd --name mongo -p 27017:27017 mongo --auth
+```
+
+```
+docker exec -it mongo mongo admin
+```
+
+创建一个名为 admin，密码为 123456 的用户
+
+```
+db.createUser({ user:'admin',pwd:'123456',roles:[ { role:'userAdminAnyDatabase', db: 'admin'},"readWriteAnyDatabase"]});
+```
+
+尝试使用上面创建的用户信息进行连接
+
+```
+db.auth('admin', '123456')
+```
+
+
+
+### rabbitMQ部署
+
+#### 1.在虚拟机中启动RabbitMQ
+
+```
+docker run -id --name=tensquare_rabbit -p 5671:5671 -p 5672:5672-p 4369:4369 -p 15672:15672 -p 25672:25672 rabbitmq:management
+```
+
+#### 2.访问地址：http://192.168.200.128:15672
+
+登录账号： guest
+
+登录密码： guest
