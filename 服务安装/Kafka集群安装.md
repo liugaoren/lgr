@@ -20,7 +20,7 @@ dataDir=/opt/zookeeper/zkdata
 clientPort=12181
 //此处的IP就是你所操作的三台虚拟机的IP地址，每台虚拟机的zoo.cfg中都需要填入这三个地址。第一个端口是master和slave之间的通信端口，默认是2888，第二个端口是leader选举的端口，集群刚启动的时候选举或者leader挂掉之后进行新的选举的端口默认是3888
 //所在的主机ip写成0.0.0.0
-server.1=0.0.0.0:12888:13888 
+server.1=0.0.0.0:12888:13888
 server.2=192.168.172.11:12888:13888
 server.3=192.168.172.12:12888:13888
 //server.1 这个1是服务器的标识也可以是其他的数字， 表示这个是第几号服务器，用来标识服务器，这个标识要写到dataDir目录下面myid文件里
@@ -73,8 +73,6 @@ log.dirs=/opt/kafka
 message.max.byte=5242880
 default.replication.factor=2
 replica.fetch.max.bytes=5242880
-//指定日志位置
-log.dirs=/data/kafka-logs
 //设置日志删除
 log.retention.hours=120
 log.cleanup.polict=delete
