@@ -27,5 +27,5 @@
 - #### [kafka集群安装](./服务安装/Kafka集群安装.md)
 - #### [nacos集群安装](./服务安装/nacos集群搭建.md)
 - #### [nginx跨域配置](./服务安装/nginx跨域配置.md)
-- #### [redis-cluster集群安装](./服务安装/Redis Cluster集群搭建.md)
+- #### [redis-cluster集群安装](服务安装/redis-cluster集群搭建.md)
 
