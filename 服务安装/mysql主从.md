@@ -18,6 +18,8 @@ binlog-do-db=test
 binlog-do-db=student
 # 设置logbin格式
 binlog_format=STATEMENT
+#遇到错误跳过
+slave-skip-errors=all
 ```
 
 从库
@@ -27,7 +29,10 @@ binlog_format=STATEMENT
 # 从服务器唯一ID
 server-id=2
 # 启用中继日志
-relay-log=mysql-relay
+relay-log = /var/log/mysql/mysql-relay-bin.log
+relay-log-index = /var/log/mysql/mysql-relay-bin.index
+#遇到错误跳过
+slave-skip-errors=all
 ```
 
 #### 2.先同步主库原有的数据
