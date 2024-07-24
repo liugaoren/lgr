@@ -26,6 +26,10 @@ slave-skip-errors=all
 
 ```
 # 主从复制-从机配置
+#限制普通用户只读（拥有super失效,mysql8.0.18后拥有CONNECTION_ADMIN不起作用）
+read_only = 1
+#限制拥有SUPER权限的用户只读
+super_read_only = 1
 # 从服务器唯一ID
 server-id=2
 # 启用中继日志
