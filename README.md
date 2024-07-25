@@ -28,5 +28,8 @@
 - #### [nacos集群安装](./服务安装/nacos集群搭建.md)
 - #### [nginx跨域配置](./服务安装/nginx跨域配置.md)
 - #### [redis-cluster集群安装](服务安装/redis-cluster集群搭建.md)
-- #### [mysql主从配置](./服务安装/mysql主从.md)
+- #### [mysql主从配置](./服务安装/mysql/mysql主从.md)
 
+- #### [mysql内网安装](./服务安装/mysql/mysql安装.md)
+
+- #### [mysql升级](./服务安装/mysql/mysql/mysql升级.md)
