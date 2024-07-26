@@ -33,3 +33,5 @@
 - #### [mysql内网安装](./服务安装/mysql/mysql安装.md)
 
 - #### [mysql升级](./服务安装/mysql/mysql/mysql升级.md)
+
+- #### [mysql数据恢复](./服务安装/mysql/mysql/mysql数据恢复.md)
