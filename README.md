@@ -24,7 +24,7 @@
 
 ## 服务安装
 
-- #### [kafka集群安装](./服务安装/Kafka集群安装.md)
+- #### [kafka集群安装](服务安装/kafka/Kafka集群安装.md) ------ [Kafka 用户登录权限配置.md](服务安装/kafka/Kafka集群安装.md)
 - #### [nacos集群安装](./服务安装/nacos集群搭建.md)
 - #### [nginx跨域配置](./服务安装/nginx跨域配置.md)
 - #### [redis-cluster集群安装](服务安装/redis-cluster集群搭建.md)
